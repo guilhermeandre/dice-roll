@@ -1,9 +1,3 @@
-// A random Number between 1 and 6, inclusive
-let roll = Math.floor(Math.random() * 6) + 1
-
-console.log(roll);  // 1, 2, 3, 4, 5, or 6
-
-
 
 //1. Idetify what initial face dice is: you need to check the face so you can change it ramdomly. 
 
@@ -12,19 +6,37 @@ console.log(roll);  // 1, 2, 3, 4, 5, or 6
 //3. Define each dice face as a class. You will call these classes each time you press the button.
 
 
+// **** REFERENCES
+// querySelect the img.face in the document 
+const $face = document.querySelector('.face');
+
+//Look for the .result output
+const $result = document.querySelector('.result');
+
+//Lokk for the .roll button
+const $btn = document.querySelector('.btn');
+
+// **** LOGIC FUNCTIONS
+
+const rollTheDice = () => {
+// A random Number between 1 and 6, inclusive
+let roll = Math.floor(Math.random() * 6) + 1
+
+// Change the value of the 'src' attribute of the .face image
+$face.className=`face dice${roll}`;
+
+//Change the value of the content within to reflect the new roll
+$result.textContent = roll;
+
+}
+// **** EVENT LISTENERS
+
+//Listen for the .roll button to be clicked
+$btn.addEventListener('click', rollTheDice);
+window.addEventListener(`scroll`, () => console.log(`Scrolled`));
+//Do the first roll
+rollTheDice()
 
 
 
-
-
-
-
-// let theH1Element = document.querySelector('h1');
-
-
-// theH1Element.innerHTML = `Cansado dessa <em>porra</em>.`;
-// theH1Element.style.color = 'limegreen';
-// theH1Element.className.add(`flip`);
-// theH1Element.className.add(`bg`);
-// theH1Element.setAttribute(`title`, `Hello World`);
 
