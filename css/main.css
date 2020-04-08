@@ -1,0 +1,51 @@
+.bg {
+
+}
+
+.flip {
+  flip: 
+}
+
+.dice {  
+  display: block;
+  border-style: solid;
+  border-radius: 2em;
+  width: 10em;
+  height: 10em;
+}
+
+.dice-1 {
+  
+  background: url(/img/dice1.svg) no-repeat;
+  
+}
+
+.dice-2 {
+  
+  background: url(/img/dice2.svg) no-repeat;
+  
+}
+
+.dice-3 {
+  
+  background: url(/img/dice3.svg) no-repeat;
+  
+}
+
+.dice-4 {
+  
+  background: url(/img/dice4.svg) no-repeat;
+  
+}
+
+.dice-5 {
+  
+  background: url(/img/dice5.svg) no-repeat;
+  
+}
+
+.dice-6 {
+  
+  background: url(/img/dice6.svg) no-repeat;
+  
+}
