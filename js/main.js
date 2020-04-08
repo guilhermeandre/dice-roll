@@ -9,7 +9,7 @@ console.log(roll);  // 1, 2, 3, 4, 5, or 6
 
 //2. Change the dice image ramdomly: imagine that each face of the dice is an image, so, everytime you want it to change, you change the image. 
 
-//3. 
+//3. Define each dice face as a class. You will call these classes each time you press the button.
 
 
 
